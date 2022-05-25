@@ -31,6 +31,10 @@ describe ("Checkbox in launchpad",()=>{
 //cy.contains('div','Verge Demo').find('[placeholder="Verge Demo"]').click({force:true})
 //cy.get('input[placeholder="Verge Demo"]').click({force:true})
 
+//cy.get(').click()
+
+
+
 });
   
 

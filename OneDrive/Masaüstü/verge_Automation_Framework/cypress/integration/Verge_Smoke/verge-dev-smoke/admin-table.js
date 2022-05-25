@@ -10,7 +10,7 @@
 
 
 
-describe ("Admin table",()=>{
+describe ("Admin tables",()=>{
     it("Should be able to choose all row elements",()=>{
   
   
