@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="gherkin-indent" Version="2.0.0" Publisher="AravindKumar"/>
+    <DisplayName>Gherkin Indent</DisplayName>
+    <Description xml:space="preserve">Gherkin Indent sets the indentation for Gherkin (cucumberjs) steps and examples.  Automatically applies coloring for features, scenarios and steps in .feature files</Description>
+    <Tags>gherkin,cucumberjs,snippet,feature,cucumber,__ext_.feature</Tags>
+    <Categories>Languages</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Properties>
+      
+      
+      
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#8bc34a" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="light" />
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/images/logo.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/logo.png" Addressable="true" />
+  </Assets>
+</PackageManifest>

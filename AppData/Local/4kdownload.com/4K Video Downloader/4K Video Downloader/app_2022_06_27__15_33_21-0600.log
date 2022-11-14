@@ -1,0 +1,641 @@
+2022-06-27 15:33:21.257463 -0600 (0x000054e4) [info] [CrashDump] Starting handler at C:/Program Files/4KDownload/4kvideodownloader
+2022-06-27 15:33:21.280120 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000001] Start http downloader https://dl.4kdownload.com/app/settings/4kvideodownloader.crash.json
+2022-06-27 15:33:21.282535 -0600 (0x000054e4) [info] [app_Gui] [BaseTranslator] Using locale en_US
+2022-06-27 15:33:21.284968 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000002] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Application&ea=Run&el=First&ev=0&cprop=%7B%22start_day%22%3A178%2C%22start_year%22%3A2022%7D&z=17896
+2022-06-27 15:33:21.284968 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000003] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Application&ea=Platform&el=windows-64-10.0.22000&cprop=%7B%22platform%22%3A%22windows-64%22%2C%22platform_version%22%3A%2210.0.22000%22%7D&z=22126
+2022-06-27 15:33:21.285722 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000004] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Application&ea=Resolution&el=1152x720&z=4116
+2022-06-27 15:33:21.285722 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000006] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Application&ea=LogicalDPI&el=96&z=1434
+2022-06-27 15:33:21.285722 -0600 (0x00007790) [info] [http] [HttpDownloaderImpl_0000000000000005] Start http downloader https://dl.4kdownload.com/app/advertisement/videodownloader.xml
+2022-06-27 15:33:21.285722 -0600 (0x000054e4) [info] [SoftwareUpdate] [Manager] appId=4kvideodownloader, appName=4K Video Downloader, appVersion=4.20.4.4870, appCast=https://dl.4kdownload.com/app/appcast/videodownloader.xml
+2022-06-27 15:33:21.286917 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000007] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=License&ea=State&el=free&cprop=%7B%22license%22%3A%22free%22%7D&z=16952
+2022-06-27 15:33:21.288812 -0600 (0x000054e4) [warning] Qt WebEngine resources not found at C:/Program Files/4KDownload/4kvideodownloader/resources. Trying parent directory... (:0, )
+2022-06-27 15:33:21.288812 -0600 (0x000054e4) [warning] Installed Qt WebEngine locales directory not found at location C:/Program Files/4KDownload/4kvideodownloader/translations\qtwebengine_locales. Trying application directory... (:0, )
+2022-06-27 15:33:21.371144 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000002] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.371374 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000002] close
+2022-06-27 15:33:21.371536 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000002] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.382489 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000007] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.383194 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000003] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.383194 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000006] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.383194 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000007] close
+2022-06-27 15:33:21.383444 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000003] close
+2022-06-27 15:33:21.383522 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000006] close
+2022-06-27 15:33:21.383587 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000007] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.383587 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000003] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.383587 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000006] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.390048 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000004] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.390277 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000004] close
+2022-06-27 15:33:21.390492 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000004] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.449164 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:33:21.644695 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000001] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.645670 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000001] close
+2022-06-27 15:33:21.645670 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000001] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:21.930043 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000008] Start http downloader https://dl.4kdownload.com/app/news/videodownloader.json
+2022-06-27 15:33:21.930043 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 1 -> 2
+2022-06-27 15:33:21.930043 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_0000000000000009] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:33:21.930043 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:33:21.930043 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:33:21.931062 -0600 (0x000054e4) [info] Creating new io context pool '' with 8 thread(s)
+2022-06-27 15:33:21.931062 -0600 (0x00004d58) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931062 -0600 (0x00000bf4) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931062 -0600 (0x000051c0) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931865 -0600 (0x00006634) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931865 -0600 (0x00006fe4) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931865 -0600 (0x00001d48) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931865 -0600 (0x00000dac) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.931865 -0600 (0x000048a8) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:33:21.933938 -0600 (0x000048a8) [info] There are not subscriptions. Iteration is not started
+2022-06-27 15:33:21.933938 -0600 (0x000048a8) [info] Check subscription after 300s
+2022-06-27 15:33:21.999079 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000009] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:21.999079 -0600 (0x00008b58) [info] User external ip info: {"ip":"108.63.205.224"}
+2022-06-27 15:33:21.999079 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000009] close
+2022-06-27 15:33:21.999280 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000009] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:22.078983 -0600 (0x00007790) [debug] [http] [HttpDownloaderImpl_0000000000000005] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:22.078983 -0600 (0x00007790) [debug] [http] [HttpDownloaderImpl_0000000000000005] close
+2022-06-27 15:33:22.078983 -0600 (0x00007790) [debug] [http] [HttpDownloaderImpl_0000000000000005] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:22.125673 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000000A] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Subscription&ea=Load&ev=0&z=16481
+2022-06-27 15:33:22.193639 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000A] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:22.193639 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000A] close
+2022-06-27 15:33:22.193639 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000A] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:22.278014 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000008] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:22.278014 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000008] close
+2022-06-27 15:33:22.278551 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000008] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:22.278551 -0600 (0x000054e4) [info] [Feedback] [NewsCenter] downloaded
+2022-06-27 15:33:26.014459 -0600 (0x000054e4) [info] Agreement accepted
+2022-06-27 15:33:31.286829 -0600 (0x000054e4) [info] [SoftwareUpdate] [Manager] checking
+2022-06-27 15:33:31.286829 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000000B] Start http downloader https://dl.4kdownload.com/app/appcast/videodownloader.xml
+2022-06-27 15:33:31.635949 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000B] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:31.644496 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000B] close
+2022-06-27 15:33:31.645500 -0600 (0x000054e4) [info] [SoftwareUpdate] [Manager] parsing
+2022-06-27 15:33:31.645500 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000B] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:33:31.647496 -0600 (0x000054e4) [info] [SoftwareUpdate] [Manager] no update available
+2022-06-27 15:33:51.927715 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000000C] Start http downloader https://dl.4kdownload.com/app/messages/videodownloader.xml
+2022-06-27 15:33:52.464454 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000C] handleOpen system:0:The operation completed successfully
+2022-06-27 15:33:52.464454 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000C] close
+2022-06-27 15:33:52.465505 -0600 (0x000054e4) [info] [Feedback] [MessageCenter] downloaded
+2022-06-27 15:33:52.465505 -0600 (0x000054e4) [info] [Feedback] [MessageCenter] extracting messages
+2022-06-27 15:33:52.465505 -0600 (0x000054e4) [info] [Feedback] [MessageCenter] extracted 0 messages
+2022-06-27 15:33:52.465505 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000C] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:34:21.933970 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:35:22.100718 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:35:53.824590 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:35:53.825577 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_000000000000000D] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:35:53.825577 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:35:53.825577 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:35:53.949662 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000D] handleOpen system:0:The operation completed successfully
+2022-06-27 15:35:53.949662 -0600 (0x00008b58) [info] User external ip info: {"ip":"108.63.205.224"}
+2022-06-27 15:35:53.949662 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000D] close
+2022-06-27 15:35:53.949662 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000D] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:21.533960 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:36:21.533960 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_000000000000000E] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:36:21.533960 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:36:21.533960 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:36:21.651257 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000E] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:21.651257 -0600 (0x00008b58) [info] User external ip info: {"ip":"108.63.205.224"}
+2022-06-27 15:36:21.651257 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000E] close
+2022-06-27 15:36:21.651257 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000E] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:22.263533 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:36:26.671509 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/determine_service
+2022-06-27 15:36:26.671509 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:36:26.671509 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/determine_service
+2022-06-27 15:36:26.672509 -0600 (0x000054e4) [info] Creating graph: ServiceDeterminatorGraph
+2022-06-27 15:36:26.674060 -0600 (0x000054e4) [info] Creating new io context pool 'graph_stop' with 8 thread(s)
+2022-06-27 15:36:26.675117 -0600 (0x00008810) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.675117 -0600 (0x00000a68) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.675117 -0600 (0x0000922c) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.676085 -0600 (0x00000434) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.676085 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000000F] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=12235
+2022-06-27 15:36:26.676085 -0600 (0x00003d80) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.676085 -0600 (0x000054e4) [info] Started url parsing: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:36:26.676085 -0600 (0x000023b4) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.676085 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/youtube/channel
+2022-06-27 15:36:26.676085 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:36:26.676085 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/youtube/channel
+2022-06-27 15:36:26.676085 -0600 (0x00003138) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.676085 -0600 (0x000056a4) [info] AsioContext::IoContext::threadFunc started
+2022-06-27 15:36:26.677054 -0600 (0x000054e4) [info] Creating graph: YoutubeChannelParserGraph
+2022-06-27 15:36:26.686089 -0600 (0x000051c0) [info] Youtube channel initial request performer url: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:36:26.686089 -0600 (0x00006634) [info] [http] [HttpDownloaderImpl_0000000000000010] Start http downloader https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:36:26.800605 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000F] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:26.800605 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000F] close
+2022-06-27 15:36:26.800605 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000000F] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:27.609777 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000010] handleRedirect https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg -> https://accounts.google.com/ServiceLogin?service=youtube&passive=1209600&continue=https%3A%2F%2Fstudio.youtube.com%2Fvideo%2Fkir0_ZWHUMo%2Fedit%3Fc%3DUCbQKsXPFG25F9igwdShhphg&followup=https%3A%2F%2Fstudio.youtube.com%2Fvideo%2Fkir0_ZWHUMo%2Fedit%3Fc%3DUCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:36:27.610721 -0600 (0x00008b58) [debug] [http] [RequestPerform_0000000000000000] making redirect from { https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg } to { https://accounts.google.com/ServiceLogin?service=youtube&passive=1209600&continue=https%3A%2F%2Fstudio.youtube.com%2Fvideo%2Fkir0_ZWHUMo%2Fedit%3Fc%3DUCbQKsXPFG25F9igwdShhphg&followup=https%3A%2F%2Fstudio.youtube.com%2Fvideo%2Fkir0_ZWHUMo%2Fedit%3Fc%3DUCbQKsXPFG25F9igwdShhphg }
+2022-06-27 15:36:27.997180 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000010] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:28.170519 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000010] close
+2022-06-27 15:36:28.170519 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000010] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:28.202415 -0600 (0x000051c0) [error] Error occurred while in message loop: D:\jenkins-msvc-x64\workspace\dia.app_release_vd-4.20-ad-4.5_2\sdk\include\openmedia\appgraph\WorkerGraphException.h(101): Throw in function void __cdecl openmedia::appgraph::worker::throwException<class openmedia::downloader::url_parser_exception>(class openmedia::appgraph::worker::WorkerGraphGuard &&,class openmedia::downloader::url_parser_exception &&)
+Dynamic exception type: struct boost::wrapexcept<class openmedia::appgraph::worker::WorkerGraphInternalException<class openmedia::downloader::url_parser_exception> >
+std::exception::what: 
+2022-06-27 15:36:28.203358 -0600 (0x000056a4) [warning] Finished url parsing with exception: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:36:28.204366 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000011] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%208&z=19606
+2022-06-27 15:36:28.277971 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000011] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:28.277971 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000011] close
+2022-06-27 15:36:28.278971 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000011] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:32.011896 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000012] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=22721
+2022-06-27 15:36:32.133944 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000012] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:32.133944 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000012] close
+2022-06-27 15:36:32.134943 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000012] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:36:43.898538 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000013] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=License&ea=Show&el=import&z=4700
+2022-06-27 15:36:44.034023 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000013] handleOpen system:0:The operation completed successfully
+2022-06-27 15:36:44.034023 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000013] close
+2022-06-27 15:36:44.034023 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000013] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:37:13.694045 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:37:13.694045 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:37:13.694045 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:37:13.694045 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_0000000000000014] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:37:13.811121 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000014] handleOpen system:0:The operation completed successfully
+2022-06-27 15:37:13.811121 -0600 (0x00008b58) [info] User external ip info: {"ip":"108.63.205.224"}
+2022-06-27 15:37:13.811121 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000014] close
+2022-06-27 15:37:13.811121 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000014] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:37:22.433753 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:37:39.385535 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000015] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=License&ea=Show&el=auth&z=5130
+2022-06-27 15:37:39.514546 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000015] handleOpen system:0:The operation completed successfully
+2022-06-27 15:37:39.515568 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000015] close
+2022-06-27 15:37:39.515568 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000015] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:37:56.101140 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:37:56.101140 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_0000000000000016] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:37:56.101140 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:37:56.101140 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:37:56.231728 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000016] handleOpen system:0:The operation completed successfully
+2022-06-27 15:37:56.232753 -0600 (0x00008b58) [info] User external ip info: {"ip":"108.63.205.224"}
+2022-06-27 15:37:56.232753 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000016] close
+2022-06-27 15:37:56.232753 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000016] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:07.856576 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:38:07.856576 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_0000000000000017] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:38:07.856576 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:38:07.857576 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000017] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000017] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /getinfo
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000017] handleOpen system:11001:No such host is known
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000017] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000017] close
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000017] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000017] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:07.857576 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000017] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:21.939941 -0600 (0x00000dac) [info] There are not subscriptions. Iteration is not started
+2022-06-27 15:38:21.940350 -0600 (0x00000dac) [info] Check subscription after 300s
+2022-06-27 15:38:22.588767 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:38:31.166002 -0600 (0x000054e4) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Set max active count 2 -> 2
+2022-06-27 15:38:31.166002 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:38:31.166002 -0600 (0x00004300) [info] [downloader] [HttpDownloaderQueue_00000247FFAED530] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:38:31.166002 -0600 (0x000054e4) [info] [http] [HttpDownloaderImpl_0000000000000018] Start http downloader http://sa.openmedia.co:8018/getinfo
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000018] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000018] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /getinfo
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000018] handleOpen system:11001:No such host is known
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000018] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000018] close
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000018] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000018] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:31.166994 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000018] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:48.758981 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/determine_service
+2022-06-27 15:38:48.758981 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:38:48.758981 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/determine_service
+2022-06-27 15:38:48.758981 -0600 (0x000054e4) [info] Creating graph: ServiceDeterminatorGraph
+2022-06-27 15:38:48.761045 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000019] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=15058
+2022-06-27 15:38:48.761045 -0600 (0x000054e4) [info] Started url parsing: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.761045 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/youtube/channel
+2022-06-27 15:38:48.761045 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:38:48.761045 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/youtube/channel
+2022-06-27 15:38:48.761045 -0600 (0x000054e4) [info] Creating graph: YoutubeChannelParserGraph
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000019] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000019] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=15058
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000019] handleOpen system:11001:No such host is known
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000019] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000019] close
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000019] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000019] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.761984 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000019] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:48.761984 -0600 (0x00000dac) [info] Youtube channel initial request performer url: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.762990 -0600 (0x00006fe4) [info] [http] [HttpDownloaderImpl_000000000000001A] Start http downloader https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001A] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000001A] coro finished with ec = system:11001, No such host is known, host = studio.youtube.com, service = https, target = /video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001A] handleOpen system:11001:No such host is known
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001A] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, redirected 0 times
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001A] close
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001A] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001A] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.763967 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001A] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:48.763967 -0600 (0x00000dac) [warning] Youtube channel initial request : Request to 'https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:38:48.763967 -0600 (0x00000dac) [error] Error occurred while in message loop: D:\jenkins-msvc-x64\workspace\dia.app_release_vd-4.20-ad-4.5_2\sdk\include\openmedia\appgraph\WorkerGraphException.h(101): Throw in function void __cdecl openmedia::appgraph::worker::throwException<class openmedia::downloader::url_parser_exception>(class openmedia::appgraph::worker::WorkerGraphGuard &&,class openmedia::downloader::url_parser_exception &&)
+Dynamic exception type: struct boost::wrapexcept<class openmedia::appgraph::worker::WorkerGraphInternalException<class openmedia::downloader::url_parser_exception> >
+std::exception::what: 
+2022-06-27 15:38:48.764987 -0600 (0x000056a4) [warning] Finished url parsing with exception: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:38:48.789137 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=15058' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:38:48.790133 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000001B] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=17243
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001B] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [warning] [http] [HttpOpen_000000000000001B] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=17243
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001B] handleOpen system:11001:No such host is known
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001B] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001B] close
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001B] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001B] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:48.791159 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001B] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:48.818248 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=17243' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:38:56.561691 -0600 (0x000054e4) [warning] Cannot launch 'mailto:support@4kdownload.com?subject=%28Problem%29 Link parsing failed&body=httpsA0F0Fstudio.youtube.com0Fvideo0Fkir0_ZWHUMo0FeditFcDUCbQKsXPFG25F9igwdShhphgAAApplication NameA 4K Video DownloaderAApplication VersionA 4.20.4.4870AOperating SystemA windows-64': There is no mail program installed. (0:, %4)
+2022-06-27 15:38:56.726182 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000001C] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=8694
+2022-06-27 15:38:56.726182 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001C] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:38:56.726182 -0600 (0x00008b58) [warning] [http] [HttpOpen_000000000000001C] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=8694
+2022-06-27 15:38:56.726182 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001C] handleOpen system:11001:No such host is known
+2022-06-27 15:38:56.726182 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001C] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:38:56.727347 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001C] close
+2022-06-27 15:38:56.727347 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001C] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:56.727347 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001C] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:38:56.727347 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001C] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:38:56.727528 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=8694' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:22.936957 -0600 (0x00008b58) [info] [NetworkReachability] [Loop_00000057E68FED90] network is reachable
+2022-06-27 15:39:27.707923 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/determine_service
+2022-06-27 15:39:27.707923 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:39:27.707923 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/determine_service
+2022-06-27 15:39:27.707923 -0600 (0x000054e4) [info] Creating graph: ServiceDeterminatorGraph
+2022-06-27 15:39:27.710088 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000001D] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=29744
+2022-06-27 15:39:27.710088 -0600 (0x000054e4) [info] Started url parsing: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.710088 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/youtube
+2022-06-27 15:39:27.710088 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001D] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.711101 -0600 (0x000018c8) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC16E0] started
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [warning] [http] [HttpOpen_000000000000001D] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=29744
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001D] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.711101 -0600 (0x000016fc) [info] [downloadermodel] [QueueHandlingThread_000002478EDC16E0] started
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001D] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.711101 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Checking queue: state: Initial; force: no; size: 1
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001D] close
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001D] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000001D] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.711101 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Creating queue element:1
+2022-06-27 15:39:27.711101 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001D] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.711101 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Queue element:1 was created
+2022-06-27 15:39:27.711101 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Checking queue: state: Pending; force: no; size: 1
+2022-06-27 15:39:27.712088 -0600 (0x000072b8) [info] Creating graph: YoutubeParserGraph
+2022-06-27 15:39:27.714101 -0600 (0x00006fe4) [info] YoutubeSingleVideoUrlAnalyzerNode url: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.715077 -0600 (0x00006634) [info] [http] [HttpDownloaderImpl_000000000000001E] Start http downloader https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.715077 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001E] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.715077 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000001E] coro finished with ec = system:11001, No such host is known, host = dl.4kdownload.com, service = https, target = /app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.715077 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001E] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001E] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json, redirected 0 times
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001E] close
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001E] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001E] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.716074 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001E] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.716074 -0600 (0x00001d48) [info] [http] [HttpDownloaderImpl_000000000000001F] Start http downloader https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000001F] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000001F] coro finished with ec = system:11001, No such host is known, host = fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com, service = https, target = /download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001F] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000001F] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json, redirected 0 times
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001F] close
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001F] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000001F] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.717071 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000001F] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.718067 -0600 (0x00006634) [info] [http] [HttpDownloaderImpl_0000000000000020] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000020] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [warning] [http] [HttpSOpen_0000000000000020] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000020] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000020] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999, redirected 0 times
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000020] close
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000020] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000020] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.718067 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000020] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.719078 -0600 (0x00001d48) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:27.723050 -0600 (0x00001d48) [info] [http] [HttpDownloaderImpl_0000000000000021] Start http downloader https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [warning] [http] [DirectConnect_0000000000000021] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [warning] [http] [HttpSOpen_0000000000000021] coro finished with ec = system:11001, No such host is known, host = dl.4kdownload.com, service = https, target = /app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000021] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000021] close
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [debug] [http] [HttpSStream_0000000000000021] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [debug] [http] [HttpSStream_0000000000000021] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.724053 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000021] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [info] [http] [HttpDownloaderImpl_0000000000000022] Start http downloader https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [warning] [http] [DirectConnect_0000000000000022] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [warning] [http] [HttpSOpen_0000000000000022] coro finished with ec = system:11001, No such host is known, host = fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com, service = https, target = /download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000022] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000022] close
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [debug] [http] [HttpSStream_0000000000000022] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [debug] [http] [HttpSStream_0000000000000022] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.725043 -0600 (0x00001d48) [debug] [http] [HttpDownloaderImpl_0000000000000022] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.726058 -0600 (0x00001d48) [info] [http] [HttpDownloaderImpl_0000000000000023] Start http downloader 
+2022-06-27 15:39:27.726058 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = generic:22, Invalid argument, url = , redirected 0 times
+2022-06-27 15:39:27.726058 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000023] close
+2022-06-27 15:39:27.727055 -0600 (0x00006634) [debug] Processing video info for url : 
+2022-06-27 15:39:27.727055 -0600 (0x00006634) [info] [http] [HttpDownloaderImpl_0000000000000024] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.727055 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000024] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.727055 -0600 (0x00008b58) [warning] [http] [HttpSOpen_0000000000000024] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.727055 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000024] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000024] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999, redirected 0 times
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000024] close
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000024] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000024] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.728034 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000024] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.728034 -0600 (0x00001d48) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:27.728034 -0600 (0x00001d48) [debug] Processing video info for url : 
+2022-06-27 15:39:27.728034 -0600 (0x00001d48) [info] [http] [HttpDownloaderImpl_0000000000000025] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000025] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [warning] [http] [HttpSOpen_0000000000000025] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000025] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000025] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA, redirected 0 times
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000025] close
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000025] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000025] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.729059 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000025] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.729059 -0600 (0x00006634) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:27.730027 -0600 (0x00006634) [error] Error occurred while in message loop: D:\jenkins-msvc-x64\workspace\dia.app_release_vd-4.20-ad-4.5_2\sdk\include\openmedia\appgraph\WorkerGraphException.h(101): Throw in function void __cdecl openmedia::appgraph::worker::throwException<class openmedia::downloader::url_parser_exception>(class openmedia::appgraph::worker::WorkerGraphGuard &&,class openmedia::downloader::url_parser_exception &&)
+Dynamic exception type: struct boost::wrapexcept<class openmedia::appgraph::worker::WorkerGraphInternalException<class openmedia::downloader::url_parser_exception> >
+std::exception::what: 
+2022-06-27 15:39:27.731023 -0600 (0x000056a4) [warning] Finished url parsing with exception: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:27.731023 -0600 (0x000018c8) [debug] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] notify element:1 state:Finished
+2022-06-27 15:39:27.731023 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:39:27.731023 -0600 (0x000016fc) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:39:27.756750 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=29744' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:27.757887 -0600 (0x000016fc) [error] [downloadermodel] [SimultaneouslyRunningControllersQueue[parse]_000002478EDC16E0] cancel: element:1 is not found
+2022-06-27 15:39:27.757977 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000026] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=8131
+2022-06-27 15:39:27.758094 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000026] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:27.758094 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000026] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=8131
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000026] handleOpen system:11001:No such host is known
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000026] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000026] close
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000026] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000026] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:27.759122 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000026] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:27.797778 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=8131' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:32.347084 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000027] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=4626
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000027] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000027] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=4626
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000027] handleOpen system:11001:No such host is known
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000027] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000027] close
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000027] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000027] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:32.348084 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000027] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:32.351073 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=manual&z=4626' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:34.737403 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 12 (:0, )
+2022-06-27 15:39:34.738437 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 12 (:0, )
+2022-06-27 15:39:34.739562 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 12 (:0, )
+2022-06-27 15:39:34.740281 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 12 (:0, )
+2022-06-27 15:39:34.740956 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 12 (:0, )
+2022-06-27 15:39:34.741661 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 12 (:0, )
+2022-06-27 15:39:34.742353 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 12 (:0, )
+2022-06-27 15:39:34.751322 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 14 (:0, )
+2022-06-27 15:39:34.751322 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 14 (:0, )
+2022-06-27 15:39:34.752329 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 14 (:0, )
+2022-06-27 15:39:34.753315 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 14 (:0, )
+2022-06-27 15:39:34.753315 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 14 (:0, )
+2022-06-27 15:39:34.754674 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 14 (:0, )
+2022-06-27 15:39:34.755306 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 14 (:0, )
+2022-06-27 15:39:34.756048 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 11 (:0, )
+2022-06-27 15:39:34.756530 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 11 (:0, )
+2022-06-27 15:39:34.757167 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 11 (:0, )
+2022-06-27 15:39:34.757799 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 11 (:0, )
+2022-06-27 15:39:34.758437 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 11 (:0, )
+2022-06-27 15:39:34.758437 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 11 (:0, )
+2022-06-27 15:39:34.759436 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 11 (:0, )
+2022-06-27 15:39:34.761548 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 32 (:0, )
+2022-06-27 15:39:34.762544 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 32 (:0, )
+2022-06-27 15:39:34.762544 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 32 (:0, )
+2022-06-27 15:39:34.763548 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 32 (:0, )
+2022-06-27 15:39:34.764538 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 32 (:0, )
+2022-06-27 15:39:34.764980 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 32 (:0, )
+2022-06-27 15:39:34.765602 -0600 (0x000054e4) [warning]   OpenType support missing for "Leelawadee UI", script 32 (:0, )
+2022-06-27 15:39:34.769311 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 18 (:0, )
+2022-06-27 15:39:34.770308 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 18 (:0, )
+2022-06-27 15:39:34.770308 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 18 (:0, )
+2022-06-27 15:39:34.771533 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 18 (:0, )
+2022-06-27 15:39:34.772158 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 18 (:0, )
+2022-06-27 15:39:34.772794 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 18 (:0, )
+2022-06-27 15:39:34.773429 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 18 (:0, )
+2022-06-27 15:39:34.776367 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 19 (:0, )
+2022-06-27 15:39:34.777345 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 19 (:0, )
+2022-06-27 15:39:34.778341 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 19 (:0, )
+2022-06-27 15:39:34.779358 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 19 (:0, )
+2022-06-27 15:39:34.780188 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 19 (:0, )
+2022-06-27 15:39:34.780188 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 19 (:0, )
+2022-06-27 15:39:34.781444 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 19 (:0, )
+2022-06-27 15:39:34.784836 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 20 (:0, )
+2022-06-27 15:39:34.785833 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 20 (:0, )
+2022-06-27 15:39:34.785833 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 20 (:0, )
+2022-06-27 15:39:34.786831 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 20 (:0, )
+2022-06-27 15:39:34.787888 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 20 (:0, )
+2022-06-27 15:39:34.788663 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 20 (:0, )
+2022-06-27 15:39:34.789467 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 20 (:0, )
+2022-06-27 15:39:34.790502 -0600 (0x000054e4) [warning]   OpenType support missing for "MS Shell Dlg 2", script 16 (:0, )
+2022-06-27 15:39:34.791625 -0600 (0x000054e4) [warning]   OpenType support missing for "Arial", script 16 (:0, )
+2022-06-27 15:39:34.792201 -0600 (0x000054e4) [warning]   OpenType support missing for "MS UI Gothic", script 16 (:0, )
+2022-06-27 15:39:34.792201 -0600 (0x000054e4) [warning]   OpenType support missing for "SimSun", script 16 (:0, )
+2022-06-27 15:39:34.793995 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Emoji", script 16 (:0, )
+2022-06-27 15:39:34.795071 -0600 (0x000054e4) [warning]   OpenType support missing for "Segoe UI Symbol", script 16 (:0, )
+2022-06-27 15:39:34.795310 -0600 (0x000054e4) [warning]   OpenType support missing for "Nirmala UI", script 16 (:0, )
+2022-06-27 15:39:46.485734 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/determine_service
+2022-06-27 15:39:46.485734 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:39:46.485734 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/determine_service
+2022-06-27 15:39:46.485734 -0600 (0x000054e4) [info] Creating graph: ServiceDeterminatorGraph
+2022-06-27 15:39:46.487558 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000028] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=27805
+2022-06-27 15:39:46.487558 -0600 (0x000054e4) [info] Started url parsing: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.487558 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/youtube
+2022-06-27 15:39:46.487558 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000028] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000028] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=27805
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000028] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.488558 -0600 (0x00009798) [info] [downloadermodel] [QueueHandlingThread_000002478EDC3540] started
+2022-06-27 15:39:46.488558 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Checking queue: state: Initial; force: no; size: 1
+2022-06-27 15:39:46.488558 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Creating queue element:1
+2022-06-27 15:39:46.488558 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Queue element:1 was created
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000028] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.488558 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Checking queue: state: Pending; force: no; size: 1
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000028] close
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000028] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.488558 -0600 (0x00006138) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC3540] started
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000028] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.488558 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000028] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.489556 -0600 (0x000072b8) [info] Creating graph: YoutubeParserGraph
+2022-06-27 15:39:46.490552 -0600 (0x000048a8) [info] YoutubeSingleVideoUrlAnalyzerNode url: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.490552 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=clip%20%7C%20www.youtube.com&z=27805' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:46.490552 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000029] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=3605
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000029] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000029] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=3605
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000029] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.491569 -0600 (0x00000dac) [info] [http] [HttpDownloaderImpl_000000000000002A] Start http downloader https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000029] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000029] close
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000029] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000029] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.491569 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000029] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002A] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000002A] coro finished with ec = system:11001, No such host is known, host = dl.4kdownload.com, service = https, target = /app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002A] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002A] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://dl.4kdownload.com/app/settings/4kvideodownloader.settings.json, redirected 0 times
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002A] close
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002A] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002A] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.492545 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002A] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.493542 -0600 (0x000048a8) [info] [http] [HttpDownloaderImpl_000000000000002B] Start http downloader https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.493542 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002B] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.493542 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000002B] coro finished with ec = system:11001, No such host is known, host = fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com, service = https, target = /download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.493542 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002B] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.493542 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json
+2022-06-27 15:39:46.493542 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002B] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.494538 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://fourkdownload-fes-storage-1a4116eveowyw.s3.us-west-2.amazonaws.com/download/app/settings/4kvideodownloader.settings.json, redirected 0 times
+2022-06-27 15:39:46.494538 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002B] close
+2022-06-27 15:39:46.494538 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002B] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.494538 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002B] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.494538 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002B] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.494538 -0600 (0x00000dac) [info] [http] [HttpDownloaderImpl_000000000000002C] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002C] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000002C] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002C] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002C] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999, redirected 0 times
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002C] close
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002C] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002C] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.495534 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002C] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.496530 -0600 (0x000048a8) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:46.496530 -0600 (0x000048a8) [debug] Processing video info for url : 
+2022-06-27 15:39:46.496530 -0600 (0x000048a8) [info] [http] [HttpDownloaderImpl_000000000000002D] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002D] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000002D] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002D] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002D] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999, redirected 0 times
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002D] close
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002D] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002D] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.497531 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002D] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.497531 -0600 (0x00000dac) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA&gl=US&hl=en&has_verified=1&bpctr=9999999999' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:46.497531 -0600 (0x00000dac) [debug] Processing video info for url : 
+2022-06-27 15:39:46.497531 -0600 (0x00000dac) [info] [http] [HttpDownloaderImpl_000000000000002E] Start http downloader https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002E] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [warning] [http] [HttpSOpen_000000000000002E] coro finished with ec = system:11001, No such host is known, host = www.youtube.com, service = https, target = /watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002E] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002E] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://www.youtube.com/watch?v=8UsyREnqwEA, redirected 0 times
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002E] close
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002E] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [debug] [http] [HttpSStream_000000000000002E] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.498524 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002E] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.498524 -0600 (0x000048a8) [warning] Request to 'https://www.youtube.com/watch?v=8UsyREnqwEA' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:39:46.499520 -0600 (0x000048a8) [error] Error occurred while in message loop: D:\jenkins-msvc-x64\workspace\dia.app_release_vd-4.20-ad-4.5_2\sdk\include\openmedia\appgraph\WorkerGraphException.h(101): Throw in function void __cdecl openmedia::appgraph::worker::throwException<class openmedia::downloader::url_parser_exception>(class openmedia::appgraph::worker::WorkerGraphGuard &&,class openmedia::downloader::url_parser_exception &&)
+Dynamic exception type: struct boost::wrapexcept<class openmedia::appgraph::worker::WorkerGraphInternalException<class openmedia::downloader::url_parser_exception> >
+std::exception::what: 
+2022-06-27 15:39:46.499520 -0600 (0x000056a4) [warning] Finished url parsing with exception: https://www.youtube.com/watch?v=8UsyREnqwEA
+2022-06-27 15:39:46.499520 -0600 (0x00006138) [debug] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] notify element:1 state:Finished
+2022-06-27 15:39:46.500541 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Checking queue: state: Initial; force: no; size: 0
+2022-06-27 15:39:46.500541 -0600 (0x00009798) [info] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] Checking queue: state: Pending; force: no; size: 0
+2022-06-27 15:39:46.504857 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=3605' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:39:46.504857 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_000000000000002F] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=9455
+2022-06-27 15:39:46.504857 -0600 (0x00009798) [error] [downloadermodel] [SimultaneouslyRunningControllersQueue[smartparse]_000002478EDC3540] cancel: element:1 is not found
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [warning] [http] [DirectConnect_000000000000002F] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [warning] [http] [HttpOpen_000000000000002F] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=9455
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002F] handleOpen system:11001:No such host is known
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_000000000000002F] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002F] close
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000002F] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [debug] [http] [HttpStream_000000000000002F] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:39:46.505853 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_000000000000002F] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:39:46.507851 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%205&z=9455' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:40:01.256646 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/determine_service
+2022-06-27 15:40:01.256646 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:40:01.256646 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/determine_service
+2022-06-27 15:40:01.256646 -0600 (0x000054e4) [info] Creating graph: ServiceDeterminatorGraph
+2022-06-27 15:40:01.258747 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000030] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=8102
+2022-06-27 15:40:01.258747 -0600 (0x000054e4) [info] Started url parsing: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.258747 -0600 (0x000054e4) [info] App Graph: preparing request for url: parsers/youtube/channel
+2022-06-27 15:40:01.258747 -0600 (0x000054e4) [info] App Graph: preparing request for graph
+2022-06-27 15:40:01.258747 -0600 (0x000054e4) [info] App Graph: performing request for url: parsers/youtube/channel
+2022-06-27 15:40:01.258747 -0600 (0x000054e4) [info] Creating graph: YoutubeChannelParserGraph
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000030] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000030] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=8102
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000030] handleOpen system:11001:No such host is known
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000030] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000030] close
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000030] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000030] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.259747 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000030] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:40:01.259747 -0600 (0x000051c0) [info] Youtube channel initial request performer url: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.260743 -0600 (0x00006634) [info] [http] [HttpDownloaderImpl_0000000000000031] Start http downloader https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.261740 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Start&el=channel%20%7C%20studio.youtube.com&z=8102' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000031] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:40:01.261740 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000032] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=12307
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [HttpSOpen_0000000000000031] coro finished with ec = system:11001, No such host is known, host = studio.youtube.com, service = https, target = /video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000031] handleOpen system:11001:No such host is known
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] open event failed: ec = system:11001, No such host is known, url = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000031] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [RequestPerform_0000000000000000] finished with ec = system:10057, A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied, url = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, redirected 0 times
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000031] close
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000031] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpSStream_0000000000000031] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000031] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:40:01.261740 -0600 (0x000051c0) [warning] Youtube channel initial request : Request to 'https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied).
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000032] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:40:01.261740 -0600 (0x000051c0) [error] Error occurred while in message loop: D:\jenkins-msvc-x64\workspace\dia.app_release_vd-4.20-ad-4.5_2\sdk\include\openmedia\appgraph\WorkerGraphException.h(101): Throw in function void __cdecl openmedia::appgraph::worker::throwException<class openmedia::downloader::url_parser_exception>(class openmedia::appgraph::worker::WorkerGraphGuard &&,class openmedia::downloader::url_parser_exception &&)
+Dynamic exception type: struct boost::wrapexcept<class openmedia::appgraph::worker::WorkerGraphInternalException<class openmedia::downloader::url_parser_exception> >
+std::exception::what: 
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000032] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=12307
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000032] handleOpen system:11001:No such host is known
+2022-06-27 15:40:01.261740 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000032] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:40:01.262737 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000032] close
+2022-06-27 15:40:01.262737 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000032] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.262737 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000032] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.262737 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000032] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:40:01.262737 -0600 (0x000056a4) [warning] Finished url parsing with exception: https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg
+2022-06-27 15:40:01.265728 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Paste&ea=Mode&el=smart&z=12307' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:40:01.266724 -0600 (0x00004fd0) [info] [http] [HttpDownloaderImpl_0000000000000033] Start http downloader http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=643
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [warning] [http] [DirectConnect_0000000000000033] coro finished with ec = system:11001, No such host is known, host = https://studio.youtube.com/video/kir0_ZWHUMo/edit?c=UCbQKsXPFG25F9igwdShhphg, service = 
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [warning] [http] [HttpOpen_0000000000000033] coro finished with ec = system:11001, No such host is known, host = sa.openmedia.co, service = 8018, target = /collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=643
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000033] handleOpen system:11001:No such host is known
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [warning] [http] [HttpDownloaderImpl_0000000000000033] handleRead: system:10057:A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000033] close
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000033] socket::cancel finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [debug] [http] [HttpStream_0000000000000033] socket::shutdown finished with ec = system:10009, The file handle supplied is not valid
+2022-06-27 15:40:01.267486 -0600 (0x00008b58) [debug] [http] [HttpDownloaderImpl_0000000000000033] handleCancel system:995:The I/O operation has been aborted because of either a thread exit or an application request
+2022-06-27 15:40:01.268451 -0600 (0x000054e4) [error] [Feedback] [Analytics] request error: Request to 'http://sa.openmedia.co:8018/collect?v=1&tid=&cid=acd0653e-7e40-49b2-9176-40768e475e5e&t=event&an=4K%20Video%20Downloader&av=4.20.4.4870&ec=Download&ea=Parse&el=failed%20%7C%20error%204&z=643' failed with error: system:10057 (A request to send or receive data was disallowed because the socket is not connected and (when sending on a datagram socket using a sendto call) no address was supplied). http error: system:11001 (No such host is known)
+Content: 
+2022-06-27 15:40:16.262435 -0600 (0x000054e4) [warning] QMainWindow::saveState(): 'objectName' not set for QToolBar 0x2478ebef9e0 '' (:0, )
+2022-06-27 15:40:16.331780 -0600 (0x000016fc) [info] [downloadermodel] [QueueHandlingThread_000002478EDC16E0] finishing
+2022-06-27 15:40:16.331780 -0600 (0x000016fc) [info] [downloadermodel] [QueueHandlingThread_000002478EDC16E0] finished
+2022-06-27 15:40:16.331780 -0600 (0x000018c8) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC16E0] finishing
+2022-06-27 15:40:16.331780 -0600 (0x000018c8) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC16E0] finished
+2022-06-27 15:40:16.331780 -0600 (0x00009798) [info] [downloadermodel] [QueueHandlingThread_000002478EDC3540] finishing
+2022-06-27 15:40:16.331780 -0600 (0x00009798) [info] [downloadermodel] [QueueHandlingThread_000002478EDC3540] finished
+2022-06-27 15:40:16.332775 -0600 (0x00006138) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC3540] finishing
+2022-06-27 15:40:16.332775 -0600 (0x00006138) [info] [downloadermodel] [NotificationHandlingThread_000002478EDC3540] finished
+2022-06-27 15:40:16.333782 -0600 (0x000056a4) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00003138) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x000023b4) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00003d80) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00000434) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x0000922c) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00008810) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00000a68) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x000048a8) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00000bf4) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00001d48) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00006634) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00000dac) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00004d58) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x000051c0) [info] AsioContext::IoContext::threadFunc finished
+2022-06-27 15:40:16.333782 -0600 (0x00006fe4) [info] AsioContext::IoContext::threadFunc finished

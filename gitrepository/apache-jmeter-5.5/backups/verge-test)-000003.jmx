@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="verge 1" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Google Chrome&quot;;v=&quot;107&quot;, &quot;Chromium&quot;;v=&quot;107&quot;, &quot;Not=A?Brand&quot;;v=&quot;24&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">app.aws-dev.vergetech.dev</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Home page" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path"></stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                  <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                  <stringProp name="Header.value">1</stringProp>
+                </elementProp>
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Site" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Site</stringProp>
+                  <stringProp name="Header.value">same-origin</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Mode" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
+                  <stringProp name="Header.value">navigate</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-User" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-User</stringProp>
+                  <stringProp name="Header.value">?1</stringProp>
+                </elementProp>
+                <elementProp name="Sec-Fetch-Dest" elementType="Header">
+                  <stringProp name="Header.name">Sec-Fetch-Dest</stringProp>
+                  <stringProp name="Header.value">document</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+              <stringProp name="RandomTimer.range">0.0</stringProp>
+              <stringProp name="ConstantTimer.delay">0</stringProp>
+              <stringProp name="TestPlan.comments">Recorded time was 0 milliseconds</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/user/current?companyId=63d2a3b0-3196-4a80-904e-4322bcc3383c" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="companyId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">companyId</stringProp>
+                  <stringProp name="Argument.value">63d2a3b0-3196-4a80-904e-4322bcc3383c</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/user/current</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/assets/i18n/en.json" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">assets/i18n/en.json</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/settings" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/settings</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/account/log-app-start" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/account/log-app-start</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/notifications" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/notifications</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/dashboards/fieldwatch" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/dashboards/fieldwatch</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/user/current/company-list" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;pageSize&quot;:100}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/user/current/company-list</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/growers" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/growers</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/farms" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/farms</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/field-tiles" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/field-tiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/path-plans/count/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/path-plans/count/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/farms" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/63d2a3b0-3196-4a80-904e-4322bcc3383c/farms</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/fields/63d2a3b0-3196-4a80-904e-4322bcc3383c/fields-without-boundaries-count" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/fields/63d2a3b0-3196-4a80-904e-4322bcc3383c/fields-without-boundaries-count</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="test plan creation" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/user/current?companyId=b11ed63a-9e09-4178-b17f-286215a03644" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="companyId" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">companyId</stringProp>
+                  <stringProp name="Argument.value">b11ed63a-9e09-4178-b17f-286215a03644</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/user/current</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/settings" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/settings</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/path-plans/count/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/path-plans/count/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboards/fieldwatch" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboards/fieldwatch</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/settings" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/settings</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/path-plans/count/" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/path-plans/count/</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/user/current/company-list" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;pageSize&quot;:100}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/user/current/company-list</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/growers" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/growers</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/farms" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/farms</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/field-tiles" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/field-tiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/farms" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/farms</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldIds&quot;:[&quot;2168820a-2ae9-11ed-be2d-06ea6c07fab9&quot;,&quot;1dbad483-ab9b-498c-8a3d-028d487b878b&quot;,&quot;9e0af7f4-263d-45a2-8d12-3cb5a338a176&quot;,&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;6888a67f-a790-4ad9-8ad3-df348e536ac9&quot;,&quot;73c29617-4b1f-4862-95f1-dbb022f3d56c&quot;,&quot;46dbdc83-87ba-4ee3-9b3c-00a379a16a32&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;c218611f-89e3-4076-9126-3274056e6a07&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;c0fda0f5-1d4a-4450-ad1b-8b226200069b&quot;,&quot;b94c28db-c876-4a2d-9578-365f09c1f2b7&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;f619462c-bd90-11ec-bc50-005056899273&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;5d9d40cd-092c-4317-96e5-2cfa877c84c1&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;0126e663-7540-4a22-ab60-3919950307d6&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;c232cdb8-2611-11ec-a557-005056899273&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldOperationTypeNames&quot;:null,&quot;fieldIds&quot;:[&quot;2168820a-2ae9-11ed-be2d-06ea6c07fab9&quot;,&quot;1dbad483-ab9b-498c-8a3d-028d487b878b&quot;,&quot;9e0af7f4-263d-45a2-8d12-3cb5a338a176&quot;,&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;6888a67f-a790-4ad9-8ad3-df348e536ac9&quot;,&quot;73c29617-4b1f-4862-95f1-dbb022f3d56c&quot;,&quot;46dbdc83-87ba-4ee3-9b3c-00a379a16a32&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;c218611f-89e3-4076-9126-3274056e6a07&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;c0fda0f5-1d4a-4450-ad1b-8b226200069b&quot;,&quot;b94c28db-c876-4a2d-9578-365f09c1f2b7&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;f619462c-bd90-11ec-bc50-005056899273&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;5d9d40cd-092c-4317-96e5-2cfa877c84c1&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;0126e663-7540-4a22-ab60-3919950307d6&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;c232cdb8-2611-11ec-a557-005056899273&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldIds&quot;:[&quot;2168820a-2ae9-11ed-be2d-06ea6c07fab9&quot;,&quot;1dbad483-ab9b-498c-8a3d-028d487b878b&quot;,&quot;9e0af7f4-263d-45a2-8d12-3cb5a338a176&quot;,&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;6888a67f-a790-4ad9-8ad3-df348e536ac9&quot;,&quot;73c29617-4b1f-4862-95f1-dbb022f3d56c&quot;,&quot;46dbdc83-87ba-4ee3-9b3c-00a379a16a32&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;c218611f-89e3-4076-9126-3274056e6a07&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;c0fda0f5-1d4a-4450-ad1b-8b226200069b&quot;,&quot;b94c28db-c876-4a2d-9578-365f09c1f2b7&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;f619462c-bd90-11ec-bc50-005056899273&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;5d9d40cd-092c-4317-96e5-2cfa877c84c1&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;0126e663-7540-4a22-ab60-3919950307d6&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;c232cdb8-2611-11ec-a557-005056899273&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldIds&quot;:[&quot;2168820a-2ae9-11ed-be2d-06ea6c07fab9&quot;,&quot;1dbad483-ab9b-498c-8a3d-028d487b878b&quot;,&quot;9e0af7f4-263d-45a2-8d12-3cb5a338a176&quot;,&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;6888a67f-a790-4ad9-8ad3-df348e536ac9&quot;,&quot;73c29617-4b1f-4862-95f1-dbb022f3d56c&quot;,&quot;46dbdc83-87ba-4ee3-9b3c-00a379a16a32&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;c218611f-89e3-4076-9126-3274056e6a07&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;c0fda0f5-1d4a-4450-ad1b-8b226200069b&quot;,&quot;b94c28db-c876-4a2d-9578-365f09c1f2b7&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;f619462c-bd90-11ec-bc50-005056899273&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;5d9d40cd-092c-4317-96e5-2cfa877c84c1&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;0126e663-7540-4a22-ab60-3919950307d6&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;c232cdb8-2611-11ec-a557-005056899273&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/growers/b339d5f3-09b2-4fdc-be16-5da9154d404a/farms" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/growers/b339d5f3-09b2-4fdc-be16-5da9154d404a/farms</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldIds&quot;:[&quot;2168820a-2ae9-11ed-be2d-06ea6c07fab9&quot;,&quot;1dbad483-ab9b-498c-8a3d-028d487b878b&quot;,&quot;9e0af7f4-263d-45a2-8d12-3cb5a338a176&quot;,&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;6888a67f-a790-4ad9-8ad3-df348e536ac9&quot;,&quot;73c29617-4b1f-4862-95f1-dbb022f3d56c&quot;,&quot;46dbdc83-87ba-4ee3-9b3c-00a379a16a32&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;c218611f-89e3-4076-9126-3274056e6a07&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;c0fda0f5-1d4a-4450-ad1b-8b226200069b&quot;,&quot;b94c28db-c876-4a2d-9578-365f09c1f2b7&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;f619462c-bd90-11ec-bc50-005056899273&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;5d9d40cd-092c-4317-96e5-2cfa877c84c1&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;0126e663-7540-4a22-ab60-3919950307d6&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;c232cdb8-2611-11ec-a557-005056899273&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;sortColumn&quot;:null,&quot;year&quot;:2022,&quot;fieldIds&quot;:[&quot;6a03a0ec-2af5-11ed-893a-06ea6c07fab9&quot;,&quot;06dea3a6-32c3-11ed-93f3-06ea6c07fab9&quot;,&quot;04adad1e-2a37-11ed-9e04-06ea6c07fab9&quot;,&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;b457b622-d854-11ec-bd90-005056899273&quot;,&quot;6289d18f-d903-40de-a47d-9c3eb7d285b1&quot;,&quot;f63b9ed8-3064-11ed-a6fb-06ea6c07fab9&quot;,&quot;125e8c74-d859-11ec-a435-005056899273&quot;,&quot;37637ee0-7312-4d4e-929f-9758fd6e8cdc&quot;,&quot;250798bd-cf4e-44f7-b033-5455d90c6125&quot;,&quot;62583c6e-d856-11ec-8b4b-005056899273&quot;,&quot;9c5990e9-2c4e-439c-b230-64f2caa6730a&quot;,&quot;e68bdfc7-7516-4cb9-8233-b864ad9d4411&quot;,&quot;076a4ff8-03d4-413d-a8d0-2d3b91a42bfd&quot;,&quot;c843e52e-d85a-11ec-9d72-005056899273&quot;,&quot;b9bdb293-7c65-4c2b-a564-6e2a40c0ff46&quot;,&quot;b457ecc1-d66e-4715-b1c6-dd9cae97526f&quot;,&quot;691908ec-6d6c-4c1b-a647-d21fb4101457&quot;,&quot;1a476ee2-dd06-44f6-954f-08dfac12f24f&quot;,&quot;2324ac7c-3309-11ed-bbc0-06ea6c07fab9&quot;,&quot;56adaa44-3520-11ed-9949-06ea6c07fab9&quot;,&quot;70478ac4-49b1-11ed-8528-06ea6c07fab9&quot;,&quot;cf6d1230-26f3-11ec-ab8e-005056899273&quot;,&quot;1667acba-5707-11ed-bde3-06ea6c07fab9&quot;,&quot;99f9568e-5fb1-11ed-9dd3-06ea6c07fab9&quot;,&quot;774d43d2-5fb3-11ed-9456-06ea6c07fab9&quot;]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/dashboard-path-plan-summary</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/fields/field-with-boundaries" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">[&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;]</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/fields/field-with-boundaries</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/companies/b11ed63a-9e09-4178-b17f-286215a03644/equipments" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/companies/b11ed63a-9e09-4178-b17f-286215a03644/equipments</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/vboundary/ccc7ec28-4ff1-4efd-a567-aa1bf801f582" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/vboundary/ccc7ec28-4ff1-4efd-a567-aa1bf801f582</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/guidance" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;boundaryId&quot;:&quot;ccc7ec28-4ff1-4efd-a567-aa1bf801f582&quot;,&quot;companyId&quot;:&quot;b11ed63a-9e09-4178-b17f-286215a03644&quot;,&quot;trackWidth&quot;:18.28799997220224,&quot;exteriorHeadlandPasses&quot;:1,&quot;interiorHeadlandPasses&quot;:1,&quot;name&quot;:null,&quot;pathPlanId&quot;:null,&quot;activity&quot;:&quot;seeding&quot;,&quot;trackWidthOriginalUnit&quot;:&quot;m&quot;,&quot;constraints&quot;:null,&quot;algorithm&quot;:&quot;straighttracks.v3&quot;,&quot;speedWorking&quot;:8.0467,&quot;speedTurning&quot;:8.0467,&quot;options&quot;:&quot;smoothing&quot;,&quot;referenceLines&quot;:null,&quot;smoothedReferenceLines&quot;:null,&quot;vBoundary&quot;:{&quot;boundaryId&quot;:&quot;ccc7ec28-4ff1-4efd-a567-aa1bf801f582&quot;,&quot;fieldId&quot;:&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;error&quot;:null,&quot;createdById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2022-07-25T17:05:31.678083Z&quot;,&quot;modifiedAt&quot;:&quot;2022-08-25T20:22:39.750996Z&quot;,&quot;createdBy&quot;:{&quot;id&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;email&quot;:&quot;systems@vergeag.com&quot;,&quot;firstName&quot;:&quot;Verge&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;preferredName&quot;:null,&quot;active&quot;:true,&quot;userName&quot;:&quot;admin&quot;,&quot;sourceType&quot;:1,&quot;createdById&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;createdBy&quot;:null,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2019-10-21T14:49:00.08994Z&quot;,&quot;modifiedAt&quot;:&quot;2022-11-04T16:39:55.580469Z&quot;},&quot;modifiedBy&quot;:{&quot;id&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;email&quot;:&quot;systems@vergeag.com&quot;,&quot;firstName&quot;:&quot;Verge&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;preferredName&quot;:null,&quot;active&quot;:true,&quot;userName&quot;:&quot;admin&quot;,&quot;sourceType&quot;:1,&quot;createdById&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;createdBy&quot;:null,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2019-10-21T14:49:00.08994Z&quot;,&quot;modifiedAt&quot;:&quot;2022-11-04T16:39:55.580469Z&quot;},&quot;name&quot;:&quot;test001&quot;,&quot;polygons&quot;:[{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;test001&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.63269435173744,51.03434839766277],[-104.63075493608333,51.03528103124779],[-104.63509010048665,51.035400598298594],[-104.63509010048665,51.03398968743977],[-104.6337211012014,51.03334400204113],[-104.63269435173744,51.03434839766277]],&quot;exclude&quot;:false}]},{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;3&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.63158363487037,51.03413118859848],[-104.6318389284879,51.03372723927225],[-104.6308177540178,51.033861889438896],[-104.63158363487037,51.03413118859848]],&quot;exclude&quot;:false}]},{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;2&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.6298949816369,51.035156255006285],[-104.62881834427272,51.03543623158774],[-104.62982212647691,51.0349373630462],[-104.6298949816369,51.035156255006285]],&quot;exclude&quot;:false}]}],&quot;source&quot;:&quot;lp&quot;,&quot;irrigated&quot;:false,&quot;archived&quot;:false}}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/guidance</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/guidance/jobs/Z3VpZGFuY2VfMDNlNjNhNDUtMWMyYS00YmE2LTgxMWEtMGQyY2NlZDhhMzg0OjQxZTk5NzFkLTUyYjEtNGU2Yy1iMjM5LTU2NjlkZjAwNzFmMw?excludeResults=true" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="excludeResults" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">excludeResults</stringProp>
+                  <stringProp name="Argument.value">true</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/guidance/jobs/Z3VpZGFuY2VfMDNlNjNhNDUtMWMyYS00YmE2LTgxMWEtMGQyY2NlZDhhMzg0OjQxZTk5NzFkLTUyYjEtNGU2Yy1iMjM5LTU2NjlkZjAwNzFmMw</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/guidance/jobs/Z3VpZGFuY2VfMDNlNjNhNDUtMWMyYS00YmE2LTgxMWEtMGQyY2NlZDhhMzg0OjQxZTk5NzFkLTUyYjEtNGU2Yy1iMjM5LTU2NjlkZjAwNzFmMw?excludeResults=false" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="excludeResults" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.name">excludeResults</stringProp>
+                  <stringProp name="Argument.value">false</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/guidance/jobs/Z3VpZGFuY2VfMDNlNjNhNDUtMWMyYS00YmE2LTgxMWEtMGQyY2NlZDhhMzg0OjQxZTk5NzFkLTUyYjEtNGU2Yy1iMjM5LTU2NjlkZjAwNzFmMw</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="saving path plan" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://app.aws-dev.vergetech.dev/api/path-plans/upsert" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;results&quot;:[{&quot;completed&quot;:true,&quot;percent&quot;:null,&quot;error&quot;:null,&quot;details&quot;:{&quot;message&quot;:null,&quot;total&quot;:3,&quot;pathPlanId&quot;:&quot;a9a4c1e2-6059-11ed-abda-06ea6c07fab9&quot;,&quot;results&quot;:{&quot;results&quot;:[{&quot;boundary&quot;:null,&quot;boundaryId&quot;:null,&quot;headlands&quot;:{&quot;externalBoundaries&quot;:null,&quot;exteriorPassCount&quot;:1,&quot;exteriorPassDistance&quot;:783.4803950987509,&quot;exteriorPassPolygons&quot;:null,&quot;exteriorPassSeconds&quot;:350.5200171940676,&quot;exteriorPasses&quot;:[[[-104.63274588,51.03442703],[-104.6327696,51.03441466],[-104.63278837,51.03440315],[-104.63280514,51.03439039],[-104.63282298,51.03437434],[-104.632842,51.03435573],[-104.63288004,51.03431852],[-104.63291808,51.03428131],[-104.63295612,51.0342441],[-104.63299416,51.03420689],[-104.6330322,51.03416968],[-104.63307024,51.03413247],[-104.63310828,51.03409525],[-104.63314632,51.03405804],[-104.63318436,51.03402083],[-104.6332224,51.03398362],[-104.63326044,51.03394641],[-104.63329848,51.0339092],[-104.63333652,51.03387198],[-104.63337456,51.03383477],[-104.6334126,51.03379756],[-104.63345064,51.03376035],[-104.63348868,51.03372314],[-104.63352672,51.03368593],[-104.63356476,51.03364871],[-104.6336028,51.0336115],[-104.63364084,51.03357429],[-104.63367888,51.03353708],[-104.63371692,51.03349987],[-104.63372889,51.03348855],[-104.63374397,51.03347769],[-104.63376443,51.03347295],[-104.63378599,51.03347805],[-104.63380972,51.03348848],[-104.63386448,51.03351431],[-104.63391924,51.03354014],[-104.633974,51.03356597],[-104.63402876,51.0335918],[-104.63408352,51.03361762],[-104.63413828,51.03364345],[-104.63419304,51.03366928],[-104.6342478,51.03369511],[-104.63430256,51.03372093],[-104.63435732,51.03374676],[-104.63441208,51.03377259],[-104.63446684,51.03379842],[-104.6345216,51.03382425],[-104.63457636,51.03385007],[-104.63463113,51.0338759],[-104.63468589,51.03390173],[-104.63474065,51.03392756],[-104.63479541,51.03395338],[-104.63485017,51.03397921],[-104.63490493,51.03400504],[-104.63492504,51.03401487],[-104.63494218,51.0340257],[-104.63495359,51.03403846],[-104.63495857,51.03405338],[-104.63495969,51.03407514],[-104.63495969,51.03411941],[-104.63495969,51.03416368],[-104.63495969,51.03420795],[-104.63495969,51.03425222],[-104.63495969,51.03429649],[-104.63495969,51.03434076],[-104.63495969,51.03438503],[-104.63495969,51.0344293],[-104.63495969,51.03447357],[-104.63495969,51.03451784],[-104.63495969,51.03456211],[-104.63495969,51.03460638],[-104.63495969,51.03465065],[-104.63495969,51.03469492],[-104.63495969,51.03473919],[-104.63495969,51.03478346],[-104.63495969,51.03482773],[-104.63495969,51.034872],[-104.63495969,51.03491627],[-104.63495969,51.03496054],[-104.63495969,51.03500481],[-104.63495969,51.03504908],[-104.63495969,51.03509335],[-104.63495969,51.03513762],[-104.63495969,51.03518189],[-104.63495969,51.03522616],[-104.63495969,51.03527043],[-104.63495934,51.03528404],[-104.63495585,51.03529837],[-104.63494287,51.03530929],[-104.63491872,51.03531296],[-104.63488859,51.03531274],[-104.63481749,51.03531078],[-104.63474638,51.03530882],[-104.63467528,51.03530686],[-104.63460418,51.0353049],[-104.63453308,51.03530294],[-104.63446197,51.03530098],[-104.63439087,51.03529902],[-104.63431977,51.03529706],[-104.63424867,51.0352951],[-104.63417757,51.03529314],[-104.63410646,51.03529118],[-104.63403536,51.03528922],[-104.63396426,51.03528726],[-104.63389316,51.0352853],[-104.63382206,51.03528334],[-104.63375095,51.03528138],[-104.63367985,51.03527942],[-104.63360875,51.03527745],[-104.63353765,51.03527549],[-104.63346655,51.03527353],[-104.63339544,51.03527157],[-104.63332434,51.03526961],[-104.63325324,51.03526765],[-104.63318214,51.03526569],[-104.63311104,51.03526373],[-104.63303993,51.03526177],[-104.63296883,51.03525981],[-104.63289773,51.03525785],[-104.63282663,51.03525589],[-104.63275553,51.03525392],[-104.63268442,51.03525196],[-104.63261332,51.03525],[-104.63254222,51.03524804],[-104.63247112,51.03524608],[-104.63240002,51.03524412],[-104.63232891,51.03524216],[-104.63225781,51.0352402],[-104.63218671,51.03523823],[-104.63211561,51.03523627],[-104.63204451,51.03523431],[-104.6319734,51.03523235],[-104.6319023,51.03523039],[-104.6318312,51.03522843],[-104.6317601,51.03522646],[-104.631689,51.0352245],[-104.6316179,51.03522254],[-104.63154679,51.03522058],[-104.63147569,51.03521862],[-104.63140459,51.03521665],[-104.63133349,51.03521469],[-104.63126239,51.03521273],[-104.63119128,51.03521077],[-104.63116561,51.03520984],[-104.63114435,51.03520682],[-104.63115291,51.03519356],[-104.63117529,51.03518231],[-104.6312304,51.03515581],[-104.63128551,51.0351293],[-104.63134062,51.0351028],[-104.63139573,51.0350763],[-104.63145084,51.0350498],[-104.63150595,51.0350233],[-104.63156106,51.0349968],[-104.63161616,51.0349703],[-104.63167127,51.0349438],[-104.63172638,51.0349173],[-104.63178149,51.0348908],[-104.6318366,51.0348643],[-104.63189171,51.0348378],[-104.63194682,51.0348113],[-104.63200193,51.03478479],[-104.63205703,51.03475829],[-104.63211214,51.03473179],[-104.63216725,51.03470529],[-104.63222236,51.03467879],[-104.63227747,51.03465229],[-104.63233257,51.03462579],[-104.63238768,51.03459929],[-104.63244279,51.03457279],[-104.6324979,51.03454628],[-104.63255301,51.03451978],[-104.63260811,51.03449328],[-104.63266322,51.03446678],[-104.63271833,51.03444028],[-104.63274588,51.03442703]]],&quot;innerBoundaries&quot;:[[[[-104.63285252,51.03447916],[-104.6328612,51.0344746],[-104.6328779,51.03446502],[-104.63289322,51.03445456],[-104.63290705,51.03444331],[-104.63291357,51.03443749],[-104.63378881,51.03358131],[-104.63482929,51.03407205],[-104.63482928,51.0352288],[-104.63148543,51.03513658],[-104.63285252,51.03447916]]]],&quot;interiorPassCount&quot;:0,&quot;interiorPassDistance&quot;:0,&quot;interiorPassPolygons&quot;:null,&quot;interiorPassSeconds&quot;:0,&quot;interiorPasses&quot;:[],&quot;totalPassDistance&quot;:783.4803950987509,&quot;totalPassSeconds&quot;:350.5200171940676,&quot;trackWidth&quot;:18.28799997220224,&quot;type&quot;:&quot;outline&quot;},&quot;area&quot;:37791.49839663734,&quot;results&quot;:[{&quot;area&quot;:23348.239717262797,&quot;bearingResults&quot;:[{&quot;bearing&quot;:92,&quot;startingAPoint&quot;:[-104.63483382722717,51.03514662337891],&quot;startingBPoint&quot;:[-104.63161204289,51.03507569368372],&quot;ls&quot;:null,&quot;direction&quot;:null,&quot;tracks&quot;:[[[-104.63483382722717,51.03514662337891],[-104.63161204289,51.03507569368372]],[[-104.63483382814152,51.03498207077914],[-104.63178019688145,51.034914845068485]],[[-104.6348338290529,51.034817518174705],[-104.63210739609531,51.034757499367835]],[[-104.63483382996124,51.03465296556563],[-104.63243459309503,51.03460015274229]],[[-104.63483383086658,51.0344884129519],[-104.63276178788063,51.03444280519188]],[[-104.6348338317689,51.03432386033353],[-104.63299173130841,51.03428331552598]],[[-104.6348338326682,51.03415930771052],[-104.6331562455249,51.03412238492076]],[[-104.63483383356453,51.03399475508282],[-104.63332075860009,51.03396145407715]],[[-104.63447873238914,51.03382238880842],[-104.63348527053398,51.03380052299518]],[[-104.63411276812262,51.03364978231567],[-104.6336497813266,51.03363959167483]]],&quot;trackCount&quot;:0,&quot;trackTurns&quot;:[[[-104.63178019688145,51.034914845068485],[-104.63210739609531,51.034757499367835]],[[-104.6348338290529,51.034817518174705],[-104.63483382996124,51.03465296556563]],[[-104.63243459309503,51.03460015274229],[-104.63276178788063,51.03444280519188]],[[-104.63483383086658,51.0344884129519],[-104.6348338317689,51.03432386033353]],[[-104.63299173130841,51.03428331552598],[-104.6331562455249,51.03412238492076]],[[-104.6348338326682,51.03415930771052],[-104.63483383356453,51.03399475508282]],[[-104.63332075860009,51.03396145407715],[-104.63348527053398,51.03380052299518]],[[-104.63447873238914,51.03382238880842],[-104.63411276812262,51.03364978231567]]],&quot;tracksWithSlopes&quot;:null,&quot;trackDistance&quot;:1400.5720805339515,&quot;trackMedian&quot;:3,&quot;trackTurnDistance&quot;:270.74383988936404,&quot;trackTotalDistance&quot;:1671.3159204233157,&quot;trackTime&quot;:626.5996607208205,&quot;trackTurningTime&quot;:121.12764532065451,&quot;trackTotalTime&quot;:747.727306041475,&quot;missedArea&quot;:null,&quot;overlapArea&quot;:null,&quot;slopeDistances&quot;:null,&quot;error&quot;:null,&quot;errorInfo&quot;:null}],&quot;bearingResultCount&quot;:186,&quot;curvedResults&quot;:null,&quot;error&quot;:null}],&quot;resultCount&quot;:1,&quot;hasOverlap&quot;:false,&quot;error&quot;:null},{&quot;boundary&quot;:null,&quot;boundaryId&quot;:null,&quot;headlands&quot;:{&quot;externalBoundaries&quot;:null,&quot;exteriorPassCount&quot;:1,&quot;exteriorPassDistance&quot;:73.13775041893486,&quot;exteriorPassPolygons&quot;:[[[[-104.63165793,51.03401364],[-104.6316543,51.03401884],[-104.63164451,51.03403168],[-104.63163061,51.03404597],[-104.6316124,51.03405818],[-104.63159613,51.03406707],[-104.63157317,51.03407712],[-104.63154734,51.03408385],[-104.63151983,51.03408696],[-104.6314919,51.0340863],[-104.63147036,51.03408432],[-104.6314507,51.03408152],[-104.63143196,51.03407684],[-104.63141194,51.03407068],[-104.63140564,51.0340686],[-104.63134354,51.03404677],[-104.63128833,51.03402736],[-104.63117793,51.03398853],[-104.63117629,51.03398795],[-104.63115651,51.03398075],[-104.63113251,51.03396954],[-104.63111685,51.03396029],[-104.63109944,51.03394768],[-104.63108644,51.03393311],[-104.63107838,51.03391719],[-104.63107559,51.03390057],[-104.63107818,51.03388394],[-104.63108606,51.03386798],[-104.6310989,51.03385336],[-104.63111615,51.03384067],[-104.63113712,51.03383045],[-104.63115772,51.03382237],[-104.63117723,51.03381609],[-104.63119813,51.03381195],[-104.63122086,51.03380875],[-104.63122263,51.0338085],[-104.63128572,51.03380019],[-104.63134881,51.03379187],[-104.6314119,51.03378355],[-104.631475,51.03377523],[-104.63153809,51.03376691],[-104.63154021,51.03376664],[-104.6315632,51.03376386],[-104.63158865,51.03376239],[-104.63161036,51.03376248],[-104.63163552,51.03376413],[-104.6316597,51.03376882],[-104.631682,51.03377636],[-104.63170156,51.03378647],[-104.63171766,51.03379878],[-104.63172969,51.03381281],[-104.63173719,51.03382804],[-104.63174199,51.03384266],[-104.63174467,51.03385772],[-104.63174292,51.03387283],[-104.6317368,51.03388748],[-104.63172831,51.03390218],[-104.63172693,51.03390445],[-104.63170485,51.03393939],[-104.63168277,51.03397433],[-104.63166069,51.03400927],[-104.63165793,51.03401364]]]],&quot;exteriorPassSeconds&quot;:32.720978973761355,&quot;exteriorPasses&quot;:[[[-104.63153678,51.0339832],[-104.63152699,51.03399604],[-104.63151072,51.03400493],[-104.63148918,51.03400295],[-104.63146916,51.03399679],[-104.63140705,51.03397495],[-104.63135185,51.03395554],[-104.63129664,51.03393613],[-104.63124144,51.03391672],[-104.63122166,51.03390953],[-104.63120599,51.03390027],[-104.63122659,51.0338922],[-104.63124933,51.03388899],[-104.63131242,51.03388067],[-104.63137551,51.03387235],[-104.6314386,51.03386403],[-104.63150169,51.03385571],[-104.63156478,51.03384739],[-104.63158777,51.03384461],[-104.63160949,51.0338447],[-104.63161428,51.03385932],[-104.63160579,51.03387401],[-104.63158371,51.03390895],[-104.63156162,51.03394389],[-104.63153954,51.03397883],[-104.63153678,51.0339832]]],&quot;innerBoundaries&quot;:[],&quot;interiorPassCount&quot;:0,&quot;interiorPassDistance&quot;:0,&quot;interiorPassPolygons&quot;:null,&quot;interiorPassSeconds&quot;:0,&quot;interiorPasses&quot;:[],&quot;totalPassDistance&quot;:73.13775041893486,&quot;totalPassSeconds&quot;:32.720978973761355,&quot;trackWidth&quot;:18.28799997220224,&quot;type&quot;:&quot;outline&quot;},&quot;area&quot;:1474.243768254979,&quot;results&quot;:[{&quot;area&quot;:0,&quot;bearingResults&quot;:[null],&quot;bearingResultCount&quot;:null,&quot;curvedResults&quot;:null,&quot;error&quot;:null}],&quot;resultCount&quot;:0,&quot;hasOverlap&quot;:false,&quot;error&quot;:null},{&quot;boundary&quot;:null,&quot;boundaryId&quot;:null,&quot;headlands&quot;:{&quot;externalBoundaries&quot;:null,&quot;exteriorPassCount&quot;:1,&quot;exteriorPassDistance&quot;:13.083202813787127,&quot;exteriorPassPolygons&quot;:[[[[-104.62969804,51.03501237],[-104.62972206,51.03500991],[-104.62974638,51.0350103],[-104.62977017,51.03501354],[-104.62979259,51.03501951],[-104.62981286,51.035028],[-104.62983027,51.03503872],[-104.62984423,51.03505129],[-104.62985423,51.03506528],[-104.62985994,51.03508019],[-104.62986305,51.03509376],[-104.62986425,51.03510935],[-104.62986075,51.03512481],[-104.62985269,51.03513956],[-104.62984034,51.03515309],[-104.62982417,51.03516491],[-104.62980474,51.03517459],[-104.62978116,51.03518419],[-104.62976165,51.03519073],[-104.62974161,51.03519613],[-104.62973854,51.03519693],[-104.62971324,51.03520328],[-104.62968809,51.0352078],[-104.62966201,51.03520907],[-104.62963606,51.03520704],[-104.62961128,51.03520178],[-104.62958865,51.03519351],[-104.6295691,51.03518256],[-104.62955341,51.03516937],[-104.6295422,51.03515447],[-104.62953594,51.03513846],[-104.62953487,51.03512198],[-104.62953903,51.0351057],[-104.62954826,51.03509028],[-104.62956219,51.03507632],[-104.62958379,51.03505884],[-104.62960702,51.03504428],[-104.62962581,51.03503514],[-104.62963756,51.03503005],[-104.62965633,51.03502283],[-104.62969139,51.03501346],[-104.62969804,51.03501237]]]],&quot;exteriorPassSeconds&quot;:5.853272786314099,&quot;exteriorPasses&quot;:[[[-104.62973087,51.03509194],[-104.62973398,51.03510552],[-104.6297104,51.03511512],[-104.62969036,51.03512052],[-104.62966505,51.03512687],[-104.62968665,51.03510939],[-104.62970545,51.03510025],[-104.62972423,51.03509303],[-104.62973087,51.03509194]]],&quot;innerBoundaries&quot;:[],&quot;interiorPassCount&quot;:0,&quot;interiorPassDistance&quot;:0,&quot;interiorPassPolygons&quot;:null,&quot;interiorPassSeconds&quot;:0,&quot;interiorPasses&quot;:[],&quot;totalPassDistance&quot;:13.083202813787127,&quot;totalPassSeconds&quot;:5.853272786314099,&quot;trackWidth&quot;:18.28799997220224,&quot;type&quot;:&quot;outline&quot;},&quot;area&quot;:998.3170695323662,&quot;results&quot;:[{&quot;area&quot;:0,&quot;bearingResults&quot;:[null],&quot;bearingResultCount&quot;:null,&quot;curvedResults&quot;:null,&quot;error&quot;:null}],&quot;resultCount&quot;:0,&quot;hasOverlap&quot;:false,&quot;error&quot;:null}]},&quot;warnings&quot;:null}}],&quot;request&quot;:{&quot;boundaryId&quot;:&quot;ccc7ec28-4ff1-4efd-a567-aa1bf801f582&quot;,&quot;companyId&quot;:&quot;b11ed63a-9e09-4178-b17f-286215a03644&quot;,&quot;trackWidth&quot;:18.28799997220224,&quot;exteriorHeadlandPasses&quot;:1,&quot;interiorHeadlandPasses&quot;:1,&quot;name&quot;:&quot;2022 Seeding 18.29&quot;,&quot;pathPlanId&quot;:null,&quot;activity&quot;:&quot;seeding&quot;,&quot;trackWidthOriginalUnit&quot;:&quot;m&quot;,&quot;constraints&quot;:null,&quot;algorithm&quot;:&quot;straighttracks.v3&quot;,&quot;speedWorking&quot;:8.0467,&quot;speedTurning&quot;:8.0467,&quot;options&quot;:&quot;smoothing&quot;,&quot;referenceLines&quot;:null,&quot;smoothedReferenceLines&quot;:null,&quot;vBoundary&quot;:{&quot;boundaryId&quot;:&quot;ccc7ec28-4ff1-4efd-a567-aa1bf801f582&quot;,&quot;fieldId&quot;:&quot;46120de5-71b3-4a1f-a29a-becc5dd3e1f9&quot;,&quot;error&quot;:null,&quot;createdById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2022-07-25T17:05:31.678083Z&quot;,&quot;modifiedAt&quot;:&quot;2022-08-25T20:22:39.750996Z&quot;,&quot;createdBy&quot;:{&quot;id&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;email&quot;:&quot;systems@vergeag.com&quot;,&quot;firstName&quot;:&quot;Verge&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;preferredName&quot;:null,&quot;active&quot;:true,&quot;userName&quot;:&quot;admin&quot;,&quot;sourceType&quot;:1,&quot;createdById&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;createdBy&quot;:null,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2019-10-21T14:49:00.08994Z&quot;,&quot;modifiedAt&quot;:&quot;2022-11-04T16:39:55.580469Z&quot;},&quot;modifiedBy&quot;:{&quot;id&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;email&quot;:&quot;systems@vergeag.com&quot;,&quot;firstName&quot;:&quot;Verge&quot;,&quot;lastName&quot;:&quot;Admin&quot;,&quot;preferredName&quot;:null,&quot;active&quot;:true,&quot;userName&quot;:&quot;admin&quot;,&quot;sourceType&quot;:1,&quot;createdById&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;createdBy&quot;:null,&quot;modifiedById&quot;:&quot;b3ec27f5-7c46-4945-8036-112245d869b3&quot;,&quot;createdAt&quot;:&quot;2019-10-21T14:49:00.08994Z&quot;,&quot;modifiedAt&quot;:&quot;2022-11-04T16:39:55.580469Z&quot;},&quot;name&quot;:&quot;test001&quot;,&quot;polygons&quot;:[{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;test001&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.63269435173744,51.03434839766277],[-104.63075493608333,51.03528103124779],[-104.63509010048665,51.035400598298594],[-104.63509010048665,51.03398968743977],[-104.6337211012014,51.03334400204113],[-104.63269435173744,51.03434839766277]],&quot;exclude&quot;:false}]},{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;3&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.63158363487037,51.03413118859848],[-104.6318389284879,51.03372723927225],[-104.6308177540178,51.033861889438896],[-104.63158363487037,51.03413118859848]],&quot;exclude&quot;:false}]},{&quot;error&quot;:null,&quot;exportRequested&quot;:false,&quot;rings&quot;:[{&quot;error&quot;:null,&quot;exterior&quot;:true,&quot;name&quot;:&quot;2&quot;,&quot;passable&quot;:false,&quot;ring&quot;:[[-104.6298949816369,51.035156255006285],[-104.62881834427272,51.03543623158774],[-104.62982212647691,51.0349373630462],[-104.6298949816369,51.035156255006285]],&quot;exclude&quot;:false}]}],&quot;source&quot;:&quot;lp&quot;,&quot;irrigated&quot;:false,&quot;archived&quot;:false}},&quot;selectedBearings&quot;:[92,-1,-1],&quot;selectedBearingIndexes&quot;:[0,-1,-1],&quot;optimalBearings&quot;:[92,-1,-1],&quot;optimalBearingIndexes&quot;:[0,0,0]}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/path-plans/upsert</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Accept" elementType="Header">
+                  <stringProp name="Header.name">Accept</stringProp>
+                  <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+                <elementProp name="Authorization" elementType="Header">
+                  <stringProp name="Header.name">Authorization</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyOGU3MzU3OS02ODUyLTQ3ZTYtODQ0Ni0xZWMxZTYxZDg0ZTgiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIzZWMyN2Y1LTdjNDYtNDk0NS04MDM2LTExMjI0NWQ4NjliMyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJhZG1pbiIsImlkIjoiYjNlYzI3ZjUtN2M0Ni00OTQ1LTgwMzYtMTEyMjQ1ZDg2OWIzIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiVmVyZ2UiLCJleHAiOjE2NzA0Mjg3NzcsImlzcyI6Imh0dHBzOi8vYXBwLmF3cy1kZXYudmVyZ2V0ZWNoLmRldiIsImF1ZCI6InVzZXJzIn0.zpJmd-2UXBGLH6J2pw7QBw4XPVAngEkPKQlx9owSk4s</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

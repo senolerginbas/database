@@ -1,0 +1,98 @@
+{
+	"name": "gherkin-indent",
+	"displayName": "Gherkin Indent",
+	"description": "Gherkin Indent sets the indentation for Gherkin (cucumberjs) steps and examples.  Automatically applies coloring for features, scenarios and steps in .feature files",
+	"version": "2.0.0",
+	"publisher": "AravindKumar",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.2.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"keywords": [
+		"gherkin",
+		"cucumberjs"
+	],
+	"author": {
+		"email": "aravindkumarmail@gmail.com",
+		"name": "Aravind Kumar P"
+	},
+	"galleryBanner": {
+		"color": "#8bc34a",
+		"theme": "light"
+	},
+	"readme": "README.md",
+	"license": "LICENCE",
+	"activationEvents": [
+		"onCommand:gherkin-indent.format"
+	],
+	"main": "./src/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "gherkin",
+				"aliases": [
+					"gherkin",
+					"feature",
+					"cucumber"
+				],
+				"extensions": [
+					".feature"
+				],
+				"configuration": "./feature.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "gherkin",
+				"scopeName": "text.gherkin.syntax",
+				"path": "./syntaxes/feature.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "gherkin",
+				"path": "./snippets/feature.json"
+			}
+		],
+		"keybindings": {
+			"command": "gherkin-indent.format",
+			"key": "ctrl+g ctrl+f",
+			"when": "editorTextFocus"
+		},
+		"commands": [
+			{
+				"command": "gherkin-indent.format",
+				"title": "Gherkin Indent"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Gherkin Indentation Configuration",
+			"properties": {
+				"gherkin-indent.stepIndent": {
+					"type": "number",
+					"default": "7",
+					"description": "Default indentation for Given, When, Then, And, But steps"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"vscode": "^0.11.0"
+	},
+	"__metadata": {
+		"id": "9f0cabad-4403-4567-919b-9e31251922bc",
+		"publisherId": "ab070858-c9b7-4b0a-a570-154b5aa54af7",
+		"publisherDisplayName": "Aravind Kumar",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false
+	}
+}

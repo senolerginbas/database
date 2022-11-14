@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+        node-version: ['16.x']
+        include:
+          - os: macos-latest
+            node-version: '16.x'
+
+    steps:
+    - name: set git core.autocrlf to 'input'
+      run: git config --global core.autocrlf input
+    - uses: actions/checkout@v3
+    - name: with Node.js ${{ matrix.node-version }} on ${{ matrix.os }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: package-lock.json
+    - run: npm install-ci-test
+    - run: npm run build
+    - run: npm run package
+    - run: npm run eslint
