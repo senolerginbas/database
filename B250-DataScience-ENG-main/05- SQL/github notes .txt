@@ -1,0 +1,86 @@
+cd-> change directory 
+-> to go to another address on your computer you can use this command
+
+git status -> To check the status of the folder
+
+git init -> To initialize a git repo
+repository = repo
+
+git add . -> All files , each changes are taking to staging area 
+
+git commit -m 'commitname' -> To create a version
+
+git push -> Push the changes into github repo
+
+
+--------------------
+
+git log -> used to see history 
+
+
+git log --oneline -> used to see the history in a shorter way 
+
+
+git show hashcode7chars ->used to see the changes what we have in a previous version 
+
+
+git checkout hashcode7chars 
+
+
+
+git restore . -> to delete the changes which is not added into staging area 
+git restore --staged . -> removes from staging area into working area ,
+
+git reset --hard -> to delete the changes even if the changes are under staging area 
+
+
+    
+
+
+BRANCHING SYSTEM 
+
+git branch ->to see the existing branches 
+git branch bname-> to create a new branch 
+git checkout bname-> to switch into an another branch 
+git switch bname -> to switch into an another branch 
+git branch -d bname -> to delete an existing branch 
+git merge bname -> to merge the branches 
+
+
+
+// Benefit of branching system 
+
+//important
+when you make a change on one branch and commit then you wont see that change 
+in other branches, because each and every single branch work seperatedly, 
+thats how you protect the main branch from possible issues 
+every developer will be responsible for their own branches 
+the development will be faster in this way 
+less error will be occured 
+and the problems can be fixed easily 
+the codes will be more organized 
+this is how our codes be safe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
